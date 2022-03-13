@@ -78,6 +78,7 @@ html, body {
     font-family: 'Booter - Zero Zero';
     font-weight: normal;    /* removes the default h1 bold */
     color: white;
+    text-decoration: none;
 }
 
 /* makes the h1 band name larger */
@@ -108,9 +109,42 @@ html, body {
 /* styles the band image */
 .about-band-image {
     float: left;        /* sticks to the left side of the page */
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin: 15px;       /* sets away all elements */
     border-radius: 50%;     /* makes the circle */
 }
 
+/* footer */
+.main-footer {
+    background-image: url('images/header-background.jpg');
+    background-color: rgba(0, 0, 0, .6);    /* 60% transparency */
+    background-blend-mode: multiply; /* combines the top 2 properties together */
+    background-size: cover; /* expands the image as high as it cans */
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;    /* centered from top and bottom */
+}
+
+.main-footer-container ul {
+    flex-grow: 1;   /* logos grow and take as much space as possible */
+    text-align: end;    /* aligns on the right side  */
+}
+
+.main-footer-container a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/* sets space between the logos */
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+/* resizes the logos */
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}

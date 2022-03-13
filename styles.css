@@ -1,0 +1,85 @@
+/* imports Raleway font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+/* font for the browser to understand */
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("fonts/Booter - Zero Zero.woff") format("woff"),   /* it uses this font as first source */
+         url("fonts/Booter - Zero Zero.woff2") format("woff2"); /* if it can't find the first one, it uses this one */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* selects everything */
+* {     
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+/* removes the default padding and margin of the page */
+/* in that way, the header is placed at the very top */
+html, body {    
+    margin: 0;
+    padding: 0;
+}
+
+/* removes the ul's margin */
+.nav ul{
+    margin: 0;
+}
+
+/* header */
+.main-header {
+    background-image: url('images/header-background.jpg');
+    background-color: rgba(0, 0, 0, .6);    /* 60% transparency */
+    background-blend-mode: multiply; /* combines the top 2 properties together */
+    background-size: cover; /* expands the image as high as it cans */
+    padding-bottom: 30px;   /* lifts the header up */
+}
+
+/* orders the list items in a line */
+.nav li {
+    display: inline;    
+}
+
+/* styles the navigational links */
+.nav a {
+    display: inline-block;  /* allows to add padding-top and bottom to 'a' */
+    padding: .5em;     /* padding between the links */ 
+    color: white;
+    text-decoration: none;  /* removes the default underline */
+}
+
+/* when hover, background color is changed */
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);  /* 30% transparency */
+}
+
+/* styles the main navigation */
+.main-nav {
+    text-align: center;     /* centers the navigational links */
+    font-size: 1.1em;       /* like 10% bigger */
+    font-weight: lighter;   /* makes the font thinner */
+    border-bottom: 1px solid rgba(255, 255, 255, .3);   /* sets an underline for the navigational links */
+}
+
+/* spread out the nav links */
+.main-nav li {
+    padding: 0 5%;  /* 0 from top and bottom and 5% from left and right */
+}
+
+/* styles the h1 band name */
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Booter - Zero Zero';
+    font-weight: normal;    /* removes the default h1 bold */
+    color: white;
+}
+
+/* makes the h1 band name larger */
+.band-name-large {
+    font-size: 8em;
+}
